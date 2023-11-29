@@ -11,7 +11,7 @@
   /* Core colours */
   /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
   --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
+  --colour-peppermint: #e8f4ea;
   --colour-aquaisland: #a8dadc;
   --colour-wedgewood: #457b9d;
   --colour-cello: #1d3557;
@@ -33,15 +33,25 @@ body {
   background-color: var(--body-background-colour);
 }
 
-main {
-  min-height: 100vh;
-
+.tdForm {
+  padding-top: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-
-
+.tds {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  background-color:  #C1E1C1;
+}
+h1 {
+  font-size: 1.5rem;
+}
 /****** Screen reader text utility clsas *******/
 .sr-only {
   position: absolute;
