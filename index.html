@@ -3,7 +3,7 @@
 
 <head>
   <!-- Set the page title -->
-  <title>Assignment 04 - Finishing a Todo List App</title>
+  <title>Checklist</title>
 
   <!-- Set the charset we're using to UTF-8 -->
   <meta charset="utf-8" />
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="./style.css" />
 
   <!-- Set the Favicon  -->
-  <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+  <link rel="icon" href="./images/favicon/check.svg" type="image/svg+xml" />
 </head>
 <body>
 
@@ -39,9 +39,22 @@
     - Have you conducted a code review and left a GitHub Issue on your team member's repo?
 
   -->
-
+  <header>
+    <h2>Checklist</h2>
+    <img src="./images/favicon/check.svg" alt="checkmark logo">
+  </header>
   <main>
-    <div id="app"></div>
+      <div class="tdForm"> 
+    <form>
+      <h1>Create a To-Do Item</h1>
+      <br>
+      <input type="text" placeholder="Clean bedroom">
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+    <div class="tds">
+      <h2>Current To-Do's</h2>
+    </div>
   </main>
 
   <!-- Add JavaScript File -->
