@@ -45,10 +45,15 @@
   </header>
   <main>
       <div class="tdForm"> 
-    <form>
+    <form id="toDoForm">
       <h1>Create a To-Do Item</h1>
       <br>
-      <input type="text" placeholder="Clean bedroom">
+      <input 
+      type="text" 
+      placeholder="Clean bedroom"
+        name="tdInputID"
+        id="tdInputID"
+        required>
       <input type="submit" value="Submit">
     </form>
     </div>
@@ -62,3 +67,14 @@
 
 </body>
 </html>
+<!--
+
+get form input and put into a list of todo items, use objects 
+so there are attributes
+display items under current to-do's header
+add checkbox to mark each to do as done
+garbadge can to remove each to do
+clear all button
+clear completed button
+
+-->
