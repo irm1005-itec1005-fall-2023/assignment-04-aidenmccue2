@@ -3,7 +3,7 @@
  * 
  *
  */
-
+const myDiv = document.getElementById('myDiv');
 
 //
 // Variables
@@ -18,7 +18,7 @@ const tdInput = document.getElementById('tdInputID');
 //
 // Functions
 function handleFormInput(event) {
-  event.preventDefault(); // Prevent default form submission
+  event.preventDefault(); 
 
   addToDoItem(document.getElementById('tdInputID').value);
 }
@@ -49,7 +49,10 @@ function handleFormInput(event) {
     };
   
     todoItems.push(newToDoItem);
+
     console.log(todoItems)
+    myDiv.innerHTML = todoItems[toDoIndex-1].text;
+
   }
  
   tdForm.addEventListener('submit', handleFormInput);
